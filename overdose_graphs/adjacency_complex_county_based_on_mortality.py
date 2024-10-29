@@ -37,7 +37,7 @@ def generate_adjacent_counties(dataframe, variable_name,filtration): #adding fil
 
     # filter the dataframe based on the dataframe[variable_name] < high_v and dataframe[variable_name] > low_v at the same time
 
-    filtered_df = dataframe[ (dataframe[variable_name] < high_v) & (dataframe[variable_name] > low_v)]
+    filtered_df = dataframe[ (dataframe[variable_name] <= high_v) & (dataframe[variable_name] >= low_v)]
 
     # filtered_df = dataframe
     adjacent_counties = gpd.sjoin(filtered_df, filtered_df, predicate='intersects', how='left')
