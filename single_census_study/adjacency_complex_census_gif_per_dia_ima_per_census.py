@@ -238,7 +238,7 @@ def process_single_county(state, county_code, variable_name, selected_variables_
 # Define the main function
 if __name__ == "__main__":
     # Main execution
-    base_path = '/home/h6x/git_projects/ornl-adjacency-method/single_census_study/plots'
+    base_path = '/Users/h6x/ORNL/git/WORKSTAION GIT/ornl-adjacency-method/overdose_graphs/plots'
     data_path = '/home/h6x/git_projects/ornl-svi-data-processing/processed_data/SVI/SVI2018_MIN_MAX_SCALED_MISSING_REMOVED'
 
     # EP_PCI not included in the list of selected variables
